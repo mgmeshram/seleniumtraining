@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/
+MyTemplateTestNGClass.java
+bin/
+lib/
+test-output/
+        
