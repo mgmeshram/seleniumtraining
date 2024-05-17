@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('unit test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+           stage('static Analysis') {
+            steps {
+                echo 'Using Sonar Qube'
+            }
+        }
+        stage('Generate bulid ') {
+            steps {
+                echo 'Using Maven'
+            }
+        }
+        stage('execute regression tests') {
+            steps {
+                echo 'Using Selenium, rest assured'
+            }
+        }
+    }
+}
